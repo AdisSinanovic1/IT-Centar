@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+  </head>
+  <body style="margin: 0">
+    <style>
+      main {
+        width: 100%;
+        height: 100vh;
+        background-color: cadetblue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .mainContainer {
+        width: 70%;
+        height: 70%;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .top {
+        width: 80%;
+        height: 20%;
+        display: flex;
+        justify-content: right;
+        align-items: center;
+      }
+      .bottom {
+        width: 80%;
+        height: 80%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .card {
+        width: 300px;
+        height: 420px;
+        border: 2px solid black;
+      }
+
+      .header {
+        height: 40%;
+        width: 100%;
+        background-color: rgb(212, 109, 212);
+        justify-content: center;
+        align-items: center;
+      }
+
+      .body {
+        height: 60%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 5px;
+      }
+
+      .fotter {
+        height: 20%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .header img {
+        width: 100%;
+        height: 100%;
+      }
+
+      .body h1 {
+        margin: 0;
+        font-size: 22px;
+        justify-content: left;
+        align-items: flex-start;
+      }
+
+      .body button {
+        width: 80%;
+        height: 30px;
+        background-color: blue;
+    
+      }
+    </style>
+    <main>
+      <div class="mainContainer">
+        <div class="top">
+          <h1>Blog Cards</h1>
+        </div>
+        <div class="bottom">
+          <div class="card">
+            <div class="header">
+                <h1>Anna Smith</h1>
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-google"></a>
+            </div>
+            <div class="body">
+              <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem recusandae adipisci sed nihil culpa libero laboriosam voluptatum ratione exercitationem sequi!
+              </p>
+            </div>
+            <div class="fotter">
+            </div>
+          </div>
+          <div class="card">
+            <div class="header">
+        
+                <img src="https://mdbootstrap.com/img/Others/documentation/men-mini.webp" alt="">
+            </div>
+            <div class="body">
+              <h1>
+              Billy Cullen
+              </h1>
+              <p>Web devoloper</p>
+              <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, alias.
+              </p>
+              <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-google"></a>
+            </div>
+            <div class="fotter">
+            
+            </div>
+          </div>
+          <div class="card">
+            <div class="header">
+             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAelpNwhdnuBoQyYy0oFR_5_IX95OiY1pcEA&usqp=CAU" alt="">
+            </div>
+            <div class="body">
+              <h1>
+              Card Title
+              </h1>
+              <p>
+               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore!
+              </p>
+              <button>Button</button>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
