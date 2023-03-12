@@ -1,0 +1,75 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  height: auto;
+}
+
+.mainContainer {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  justify-content: space-between;
+  margin: 0;
+}
+.mainRight {
+  gap: 16px;
+  display: flex;
+  align-items: center;
+}
+.mainleft {
+  justify-content: flex-end;
+  gap: 16px;
+  align-items: flex-end;
+  display: flex;
+}
+.button {
+  border: 2px solid purple;
+  color: white;
+  border: 2px solid;
+}
+.mainBody {
+  display: contents;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+.div1 {
+  width: 33%;
+  height: 300px;
+}
+.div1 h1 {
+  justify-content: flex-start;
+  display: flex;
+  align-items: center;
+}
+.div2 {
+  width: 33%;
+  height: 300px;
+  background-color: purple;
+  color: white;
+}
+.mainfooter {
+  display: flex;
+  justify-content: row;
+}
+.div3 {
+  width: 33%;
+  height: 300px;
+  background-color: black;
+  color: white;
+}
+
+.image {
+  object-fit: cover;
+  z-index: -100;
+}
+
+.mainContent {
+  position: relative;
+  top: -300px;
+  color: white;
+  text-align: center;
+}

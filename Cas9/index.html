@@ -25,6 +25,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        position: relative;
       }
       .top {
         width: 80%;
@@ -57,7 +58,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 16;
+        gap: 16px;
       }
 
       .body {
@@ -100,6 +101,24 @@
       .icons {
         display: flex;
         gap: 16px;
+        border-color: black;
+      }
+      .minicard{
+        width: 30px;
+        height: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .minicard .fa {
+        color: rgb(46, 2, 2);
+        border-color: transparent;
+      }
+      
+      .card .fa {
+        border: 2px solid rgb(8, 8, 8);
+        border-radius: 400px;
       }
     </style>
     <main>
@@ -109,12 +128,19 @@
         </div>
         <div class="bottom">
           <div class="card">
-            <div class="header">
+            <div style="position: relative; top: -20px; left: 10px;" class="header">
                 <h1>Anna Smith</h1>
                 <div class="icons">
-                <a target="_blank" href="https://www.facebook.com/" class="fa fa-facebook"></a>
-                <a target="_blank" href="https://www.twitter.com/" class="fa fa-twitter"></a>
-                <a target="_blank" href="https://www.google.com/" class="fa fa-google"></a>
+                  <div class="minicard">
+                    <a target="_blank" href="https://www.facebook.com/" class="fa fa-facebook"></a>
+                </div>
+                <div class = "minicard">
+                    <a target="_blank" href="https://www.twitter.com/" class="fa fa-twitter"></a>
+                </div>
+                <div class = "minicard">
+                    <a target="_blank" href="https://www.google.com/" class="fa fa-google"></a>
+            </div>
+              
                 </div>
             </div>
             <div class="body">
@@ -138,7 +164,7 @@
               <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, alias.
               </p>
-              <div class="icons">
+              <div class="minicard">
                 <a target="_blank" href="https://www.facebook.com/" class="fa fa-facebook"></a>
                 <a target="_blank" href="https://www.twitter.com/" class="fa fa-twitter"></a>
                 <a target="_blank" href="https://www.google.com/" class="fa fa-google"></a>
@@ -150,7 +176,7 @@
           </div>
           <div class="card">
             <div class="header">
-             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAelpNwhdnuBoQyYy0oFR_5_IX95OiY1pcEA&usqp=CAU" alt="">
+             <img  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAelpNwhdnuBoQyYy0oFR_5_IX95OiY1pcEA&usqp=CAU" alt="">
             </div>
             <div class="body">
               <h1>

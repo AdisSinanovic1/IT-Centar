@@ -22,7 +22,7 @@ body {
   flex-direction: row;
   justify-content: flex-end;
   gap: 16px;
-  margin-right: 5px;
+  margin-right: 10px;
 }
 .mainContainer {
   width: 100%;
