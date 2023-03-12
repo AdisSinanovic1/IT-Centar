@@ -32,13 +32,12 @@ body {
 }
 .mainBody {
   display: contents;
-  justify-content: center;
-  align-items: center;
   position: absolute;
 }
 .div1 {
-  width: 33%;
+  width: 33,3%;
   height: 300px;
+  margin-top: -252px;
 }
 .div1 h1 {
   justify-content: flex-start;
@@ -46,20 +45,22 @@ body {
   align-items: center;
 }
 .div2 {
-  width: 33%;
+  width: 33,3%;
   height: 300px;
   background-color: purple;
   color: white;
+  margin-top: -252px;
 }
 .mainfooter {
   display: flex;
   justify-content: row;
 }
 .div3 {
-  width: 33%;
+  width: 33,3%;
   height: 300px;
   background-color: black;
   color: white;
+  margin-top: -252px;
 }
 
 .image {
@@ -69,7 +70,7 @@ body {
 
 .mainContent {
   position: relative;
-  top: -300px;
+  top: -450px;
   color: white;
   text-align: center;
 }
