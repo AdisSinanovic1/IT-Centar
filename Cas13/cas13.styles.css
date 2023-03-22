@@ -1,0 +1,91 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.header {
+  width: 100vw;
+  height: 50px;
+  background-color: rgb(5, 5, 150);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  margin-right: 10px;
+}
+.mainBody {
+  width: 100%;
+  display: flex;
+}
+.hederItems {
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+}
+a {
+  text-decoration: none;
+}
+.background-image {
+  flex: 1;
+  background-image: url("2019-12-06-225139.jpg");
+  background-size: cover;
+  /* clip-path: polygon(0 0, 100% 0, 52% 100%, 0% 100%); */
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  margin: 0;
+  justify-content: center;
+  text-align: center;
+}
+.mainRight {
+  width: 20%;
+  height: 600px;
+  background-image: linear-gradient(to bottom, blue, red);
+}
+.box1{
+  width: 150px;
+  height: 159px;
+  background-color: white;
+}
+.box2{
+  width: 150px;
+  height: 159px;
+  background-color: white;
+}
+.box3{
+  width: 150px;
+  height: 159px;
+  background-color: white;
+
+}
+.boxContainer{
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 200px;
+}
+.Tracking{
+  width: 50%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.inputContainer{
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+.box1:hover{
+  background-color: blue;
+}
+.box2:hover{
+  background-color: blue;
+}
+.box3:hover{
+  background-color: blue;
+}
+
