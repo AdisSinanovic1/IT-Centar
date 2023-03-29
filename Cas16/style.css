@@ -1,0 +1,29 @@
+Body {
+    margin: 0;
+    padding: 0;
+}
+.mainBody{
+    display: flex;
+}
+.headerLeft {
+    width: 50%;
+    height: 100px;
+    background-color: red;
+
+}
+
+.hedaerRight{
+    width: 50%;
+    height: 100px;
+    background-color: green;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 30px;
+}
+
+@media only screen and (max-width: 400px) {
+    .hedaerRight {
+        display: none;
+    }
+}
