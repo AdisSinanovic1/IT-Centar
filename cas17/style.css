@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.mainContainer{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(117, 117, 211);
+    position: relative;
+}
+.card{
+    width: 200px;
+    height: 200px;
+    background-color: green;
+    position: absolute;
+    animation-name: move;
+    animation-duration: 4s;
+}
+
+
+@keyframes move{
+    25%{
+        right: 0;
+    }
+    50%{
+        bottom: 0;
+    }
+    75%{
+        left: 0;
+    }
+    100%{
+        top: 0;
+    }
+}
+
+
