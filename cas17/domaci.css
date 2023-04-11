@@ -2,14 +2,23 @@ body {
   margin: 0;
   padding: 0;
 }
-
 .header {
   width: 100%;
   height: 100px;
-  background-color: blue;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 20px;
+}
+
+.header1 {
+  width: 100%;
+  height: 70px;
+  background-color: rgb(13, 66, 66);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
   gap: 20px;
 }
 
@@ -23,10 +32,21 @@ body {
 }
 
 .section2 {
+  width: 100%;
+  height: 500px;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 100px;
+}
+
+.section2 .icon .fa-regular,
+.fa-solid {
+  font-size: 50px;
+  background-color: rgb(13, 66, 66);
+  padding: 10px;
+  border-radius: 15%;
+  margin-top: 100px;
 }
 
 .image {
@@ -53,20 +73,28 @@ body {
   flex-direction: column;
 }
 
-.section3{
-    background-image: url(map.webp);
-    width: 100%;
-    height: 500px;
-    background-size: 100% 100%;
-    object-fit: cover;
-    margin-top: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.section3 {
+  /* background-image: url(map.webp); */
+  width: 100%;
+  height: 700px;
+  background-size: 100% 100%;
+  object-fit: cover;
+  margin-top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.section4{
-    width: 100%;
-    height: 500px;
-    background-color: rgb(12, 92, 92);
+.section4 {
+  width: 100%;
+  height: 500px;
+  background-color: rgb(12, 92, 92);
 }
+
+.carouselSlide {
+  background-image: url(plocice.webp);
+  width: 100%;
+  height: 500px;
+  background-size: 100% 100%;
+}
+
