@@ -344,23 +344,90 @@
 
 
 
-const testArr_ = [true, false, [1, 23, 4, 5], 'string', 2, 23, 4, 'jos jedan'];
+// const testArr_ = [true, false, [1, 23, 4, 5], 'string', 2, 23, 4, 'jos jedan'];
 
-Boolean = 0;
-String = 0;
-Niz = 0; 
-Number = 0;
+// Boolean = 0;
+// String = 0;
+// Niz = 0; 
+// Number = 0;
 
-for (let i = 0; i < testArr_.length; i++) {
-    if (typeof testArr_);
+// for (let i = 0; i < testArr_.length; i++) {
+//     if (typeof testArr_);
 
+
+
+
+
+// let ime = 'Adis'
+// let prezime = 'Sinanovic'
+
+// function ispisiImenaPrezimena (ime, prezime) {
+//     console.log (ime, prezime);
+// }
+
+// function errorFun () {
+//     console.log('Error');
+// }
+
+// function testFun (ime, prezime, fun1, fun2) {
+//     if (ime === 'Adis' && prezime === 'Sinanovic')
+    
+// }
+
+
+
+
+// const obj = {
+//     name: 'Adis',
+//     LastName: 'Sinanovic',
+//     god: 1990,
+//     get getName() {
+//         return this.name;
+//     },
+//     set setName(setNewname) {
+//         this.name = setNewname;
+//     },
+
+//     get getAge() {
+//         const year = new Date().getFullYear();
+//         return year - this.god;
+//     },
+// }
+
+let knjiga;
+
+const izaberiKnjigu = () => {
+    knjiga = prompt("Odaberite knjigu koje zelite da kupite", "");
 }
 
+const osoba = {
+    ime: 'Adis',
+    prezime: 'Sinanovic',
+    email: 'adis@test.com',
+    password: 'test_password123',
+    kupljeneKnjige: []
+}
 
+if (knjiga) {
+    osoba.kupljeneKnjige.push(knjiga)
+}
 
+console.log(osoba)
 
+const prikaziKnjige = () => {
+      // create a new div element
+  const newDiv = document.createElement("div");
 
+  // and give it some content
+  const newContent = document.createTextNode(knjiga);
 
+  // add the text node to the newly created div
+  newDiv.appendChild(newContent);
+
+  // add the newly created element and its content into the DOM
+  const currentDiv = document.getElementById("div1");
+  document.body.insertBefore(newDiv, currentDiv);
+}
 
 
 
