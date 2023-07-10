@@ -414,21 +414,99 @@ if (knjiga) {
 
 console.log(osoba)
 
-const prikaziKnjige = () => {
-      // create a new div element
-  const newDiv = document.createElement("div");
+// const prikaziKnjige = () => {
+//       // create a new div element
+//   const newDiv = document.createElement("div");
 
-  // and give it some content
-  const newContent = document.createTextNode(knjiga);
+//   // and give it some content
+//   const newContent = document.createTextNode(knjiga);
 
-  // add the text node to the newly created div
-  newDiv.appendChild(newContent);
+//   // add the text node to the newly created div
+//   newDiv.appendChild(newContent);
 
-  // add the newly created element and its content into the DOM
-  const currentDiv = document.getElementById("div1");
-  document.body.insertBefore(newDiv, currentDiv);
+//   // add the newly created element and its content into the DOM
+//   const currentDiv = document.getElementById("div1");
+//   document.body.insertBefore(newDiv, currentDiv);
+// }
+
+
+const obj = {
+    ime: 'ime Hotela',
+    lokacija: 'lokacija Hotela',
+    brojSoba: 'broj soba',
+
 }
 
+
+
+class Banka {
+	constructor(imeBanke, racuni = []) {
+  	this.imeBanke = imeBanke;
+    this.racuni = racuni;
+  }
+  
+  kreirajRacun(ime, brojRacuna, stanje) {
+  		const noviRacun = {
+      	ime: ime,
+        brojRacuna: brojRacuna,
+        stanje: stanje
+      };
+      
+      this.racuni.push(noviRacun)
+  }
+  
+  ukupnoStanje() {
+  		let ukupnoStanjeSvihRacuna = 0
+			for (const racun of this.racuni) {
+      	ukupnoStanjeSvihRacuna += racun.stanje
+      }
+      
+      return ukupnoStanjeSvihRacuna;
+    }
+    
+  proveriRacun(brojRacuna) {
+  	const racun = this.racuni.find(racun => racun.brojRacuna === brojRacuna)
+		console.log(racun)
+    if (racun) {
+    	console.log(racun.stanje)
+    	return racun.stanje;
+    } else {
+    console.log('Nismo pronasli racun sa tim brojem u nasoj banci')
+    }
+  }
+  
+  uplati(brojRacuna) {
+  	
+  }
+}
+
+
+const halk = new Banka('Halk')
+
+const racun = halk.kreirajRacun('Adis', 1, 10)
+const racun1 = halk.kreirajRacun('Sida', 2, 50)
+
+halk.proveriRacun(1)
+
+/* console.log(halk) */
+
+
+
+const testnasegZnanja = [
+    {ime: 'Dzelal', prezime: 'Duplja', age: 23},
+    {ime: 'Adis', prezime: 'Sinanovic', age: 32},
+    {ime: 'Rizo', prezime: 'Hamidovic', age: 16},
+
+]
+
+for (obj of testnasegZnanja) {
+    for (let [key, value] of Object(obj)) {
+        if (key === 'godine ')
+
+
+    }
+}
+    
 
 
 
