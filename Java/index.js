@@ -394,25 +394,25 @@
 //     },
 // }
 
-let knjiga;
+// let knjiga;
 
-const izaberiKnjigu = () => {
-    knjiga = prompt("Odaberite knjigu koje zelite da kupite", "");
-}
+// const izaberiKnjigu = () => {
+//     knjiga = prompt("Odaberite knjigu koje zelite da kupite", "");
+// }
 
-const osoba = {
-    ime: 'Adis',
-    prezime: 'Sinanovic',
-    email: 'adis@test.com',
-    password: 'test_password123',
-    kupljeneKnjige: []
-}
+// const osoba = {
+//     ime: 'Adis',
+//     prezime: 'Sinanovic',
+//     email: 'adis@test.com',
+//     password: 'test_password123',
+//     kupljeneKnjige: []
+// }
 
-if (knjiga) {
-    osoba.kupljeneKnjige.push(knjiga)
-}
+// if (knjiga) {
+//     osoba.kupljeneKnjige.push(knjiga)
+// }
 
-console.log(osoba)
+// console.log(osoba)
 
 // const prikaziKnjige = () => {
 //       // create a new div element
@@ -430,84 +430,165 @@ console.log(osoba)
 // }
 
 
-const obj = {
-    ime: 'ime Hotela',
-    lokacija: 'lokacija Hotela',
-    brojSoba: 'broj soba',
+// const obj = {
+//     ime: 'ime Hotela',
+//     lokacija: 'lokacija Hotela',
+//     brojSoba: 'broj soba',
 
-}
+// }
 
 
 
-class Banka {
-	constructor(imeBanke, racuni = []) {
-  	this.imeBanke = imeBanke;
-    this.racuni = racuni;
-  }
+// class Banka {
+// 	constructor(imeBanke, racuni = []) {
+//   	this.imeBanke = imeBanke;
+//     this.racuni = racuni;
+//   }
   
-  kreirajRacun(ime, brojRacuna, stanje) {
-  		const noviRacun = {
-      	ime: ime,
-        brojRacuna: brojRacuna,
-        stanje: stanje
-      };
+//   kreirajRacun(ime, brojRacuna, stanje) {
+//   		const noviRacun = {
+//       	ime: ime,
+//         brojRacuna: brojRacuna,
+//         stanje: stanje
+//       };
       
-      this.racuni.push(noviRacun)
-  }
+//       this.racuni.push(noviRacun)
+//   }
   
-  ukupnoStanje() {
-  		let ukupnoStanjeSvihRacuna = 0
-			for (const racun of this.racuni) {
-      	ukupnoStanjeSvihRacuna += racun.stanje
-      }
+//   ukupnoStanje() {
+//   		let ukupnoStanjeSvihRacuna = 0
+// 			for (const racun of this.racuni) {
+//       	ukupnoStanjeSvihRacuna += racun.stanje
+//       }
       
-      return ukupnoStanjeSvihRacuna;
-    }
+//       return ukupnoStanjeSvihRacuna;
+//     }
     
-  proveriRacun(brojRacuna) {
-  	const racun = this.racuni.find(racun => racun.brojRacuna === brojRacuna)
-		console.log(racun)
-    if (racun) {
-    	console.log(racun.stanje)
-    	return racun.stanje;
-    } else {
-    console.log('Nismo pronasli racun sa tim brojem u nasoj banci')
-    }
-  }
+//   proveriRacun(brojRacuna) {
+//   	const racun = this.racuni.find(racun => racun.brojRacuna === brojRacuna)
+// 		console.log(racun)
+//     if (racun) {
+//     	console.log(racun.stanje)
+//     	return racun.stanje;
+//     } else {
+//     console.log('Nismo pronasli racun sa tim brojem u nasoj banci')
+//     }
+//   }
   
-  uplati(brojRacuna) {
+//   uplati(brojRacuna) {
   	
-  }
-}
+//   }
+// }
 
 
-const halk = new Banka('Halk')
+// const halk = new Banka('Halk')
 
-const racun = halk.kreirajRacun('Adis', 1, 10)
-const racun1 = halk.kreirajRacun('Sida', 2, 50)
+// const racun = halk.kreirajRacun('Adis', 1, 10)
+// const racun1 = halk.kreirajRacun('Sida', 2, 50)
 
-halk.proveriRacun(1)
+// halk.proveriRacun(1)
 
-/* console.log(halk) */
-
-
-
-const testnasegZnanja = [
-    {ime: 'Dzelal', prezime: 'Duplja', age: 23},
-    {ime: 'Adis', prezime: 'Sinanovic', age: 32},
-    {ime: 'Rizo', prezime: 'Hamidovic', age: 16},
-
-]
-
-for (obj of testnasegZnanja) {
-    for (let [key, value] of Object(obj)) {
-        if (key === 'godine ')
+// /* console.log(halk) */
 
 
-    }
-}
+
+// const testnasegZnanja = [
+//     {ime: 'Dzelal', prezime: 'Duplja', age: 23},
+//     {ime: 'Adis', prezime: 'Sinanovic', age: 32},
+//     {ime: 'Rizo', prezime: 'Hamidovic', age: 16},
+
+// ]
+
+// for (obj of testnasegZnanja) {
+//     for (let [key, value] of Object(obj)) {
+//         if (key === 'godine ')
+
+
+//     }
+// }
     
 
+document.getElementById("myForm").addEventListener("submit", function(event) {
+  event.preventDefault()
+
+  // ako su unijeti podaci tacni console loguj uspesna prijava
+
+let email = document.getElementById ('email').value;
+let password = document.getElementById ('password').value;
 
 
+if (email === 'adis' && password === '123') {
+  console.log('Usepsno ste se prijavili')
+} else {
+  console.log('hadalju');
+}
+
+})
+
+
+
+
+
+// const form = document.querySelector("form"),
+//   emailField = form.querySelector(".email-field"),
+//   emailInput = emailField.querySelector(".email"),
+//   passField = form.querySelector(".create-password"),
+//   passInput = passField.querySelector(".password"),
+//   cPassField = form.querySelector(".confirm-password"),
+//   cPassInput = cPassField.querySelector(".cPassword");
+// // Email Validtion
+// function checkEmail() {
+//   const emaiPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+//   if (!emailInput.value.match(emaiPattern)) {
+//     return emailField.classList.add("invalid"); //adding invalid class if email value do not mathced with email pattern
+//   }
+//   emailField.classList.remove("invalid"); //removing invalid class if email value matched with emaiPattern
+// }
+// // Hide and show password
+// const eyeIcons = document.querySelectorAll(".show-hide");
+// eyeIcons.forEach((eyeIcon) => {
+//   eyeIcon.addEventListener("click", () => {
+//     const pInput = eyeIcon.parentElement.querySelector("input"); //getting parent element of eye icon and selecting the password input
+//     if (pInput.type === "password") {
+//       eyeIcon.classList.replace("bx-hide", "bx-show");
+//       return (pInput.type = "text");
+//     }
+//     eyeIcon.classList.replace("bx-show", "bx-hide");
+//     pInput.type = "password";
+//   });
+// });
+// // Password Validation
+// function createPass() {
+//   const passPattern =
+//     /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
+//   if (!passInput.value.match(passPattern)) {
+//     return passField.classList.add("invalid"); //adding invalid class if password input value do not match with passPattern
+//   }
+//   passField.classList.remove("invalid"); //removing invalid class if password input value matched with passPattern
+// }
+// // Confirm Password Validtion
+// function confirmPass() {
+//   if (passInput.value !== cPassInput.value || cPassInput.value === "") {
+//     return cPassField.classList.add("invalid");
+//   }
+//   cPassField.classList.remove("invalid");
+// }
+// // Calling Funtion on Form Sumbit
+// form.addEventListener("submit", (e) => {
+//   e.preventDefault(); //preventing form submitting
+//   checkEmail();
+//   createPass();
+//   confirmPass();
+//   //calling function on key up
+//   emailInput.addEventListener("keyup", checkEmail);
+//   passInput.addEventListener("keyup", createPass);
+//   cPassInput.addEventListener("keyup", confirmPass);
+//   if (
+//     !emailField.classList.contains("invalid") &&
+//     !passField.classList.contains("invalid") &&
+//     !cPassField.classList.contains("invalid")
+//   ) {
+//     location.href = form.getAttribute("action");
+//   }
+// });
 
